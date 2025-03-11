@@ -71,9 +71,9 @@ class ClientController extends AbstractController
     }
 
     // delete client
-    //--> delet avec l'API
+    // delet avec l'API
 
-    public function deleteApi(?int $id)  //--> delet avec l'API
+    public function deleteApi(?int $id)  //delet avec l'API
     {
         if ($id === null) {
             throw new Exception("Client inexistant", 404);
@@ -81,8 +81,8 @@ class ClientController extends AbstractController
         $this->clientService->deleteClient($id);
         $this->json(["message" => "Succès"]);
     }
-    // --> delete avec PHP
-    public function delete(?int $id)  // --> delete avec PHP
+    // delete avec PHP
+    public function delete(?int $id)  // delete avec PHP
     {
         if ($id === null) {
             throw new Exception("Client inexistant", 404);

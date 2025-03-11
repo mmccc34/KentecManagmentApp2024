@@ -52,6 +52,7 @@ const ROUTES = [
 
 // oublie pas de changer les routes dans ce fichier :) 
     // debut des routes pour le client
+    
     "/client/create" => [
         "CONTROLLER" => "ClientController",
         "METHOD" => "create",
